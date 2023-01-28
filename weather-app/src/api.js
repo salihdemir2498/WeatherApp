@@ -4,7 +4,7 @@ import { API_KEY } from "./network/env/config";
 export async function fetchWeather(city, setError) {
 
    
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=tr`;
 
     try {
         const response = await axios.get(url);

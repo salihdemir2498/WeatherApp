@@ -20,11 +20,11 @@ const WeatherCard = ({weather}) => {
         <h2 className="weather-temp">{weather ? Math.round(weather.main?.temp - 273.15): ''}°C</h2>
         <div className="weather-details">
           <div className="parameters"> 
-            <span className="param-label">Details</span>
+            <span className="param-label">Detaylar</span>
           </div>
 
             <div className="parameters"> 
-              <span className='param-label'>Feels Like:</span>
+              <span className='param-label'>Hissedilen:</span>
               <span className='param-val'> 
                   {weather ? (weather.main?.feels_like - 273.15).toFixed(2) : '-'}°C
               </span>
@@ -32,7 +32,7 @@ const WeatherCard = ({weather}) => {
           
 
           <div className="parameters">
-            <span className='param-label'>Humidity: </span>
+            <span className='param-label'>Nem: </span>
             <span className='param-val'>
              {weather? (weather.main?.humidity) : '-'} %</span>
           </div>
@@ -40,7 +40,7 @@ const WeatherCard = ({weather}) => {
 
 
           <div className="parameters"> 
-            <span className='param-label' >Pressure: </span>
+            <span className='param-label' >Basınç: </span>
             <span className='param-val'>
               {weather? (weather.main?.pressure) : '-'} hPs</span>
           </div> 
